@@ -1,7 +1,8 @@
-FROM node:slim
+FROM debian:buster-slim
 
-COPY . .
+WORKDIR /usr/bin
+ADD http://gosspublic.alicdn.com/ossutil/1.6.5/ossutil64 /usr/bin/ossutil
+RUN chmod 755 ossutil
+ADD entrypoint.sh /usr/bin/entrypoint.sh
 
-RUN npm install --production
-
-ENTRYPOINT ["node", "/lib/main.js"]
+ENTRYPOINT [ "entrypoint.sh" ]
