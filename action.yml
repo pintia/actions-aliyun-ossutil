@@ -1,6 +1,6 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'Aliyun ossutil'
+description: 'Github actions for aliyun ossutil cli'
+author: 'pintia'
 runs:
   using: 'docker'
   image: 'Dockerfile'
