@@ -1,6 +1,0 @@
-name: 'Aliyun ossutil'
-description: 'Github actions for aliyun ossutil cli'
-author: 'pintia'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
